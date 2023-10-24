@@ -15,7 +15,7 @@ resource "aws_ecr_repository_policy" "policy" {
   for_each = toset(var.repository_names)
 
   repository = each.value
-  policy     = var.policy_documents
+  policy     = var.registry_policy
   depends_on = [aws_ecr_repository.repository]
 }
 

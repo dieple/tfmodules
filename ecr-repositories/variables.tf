@@ -26,6 +26,6 @@ variable "scan_on_push" {
   type = bool
 }
 
-variable "policy_documents" {
+variable "registry_policy" {
   type    = string
 }
