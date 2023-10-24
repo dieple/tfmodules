@@ -27,6 +27,5 @@ variable "scan_on_push" {
 }
 
 variable "policy_documents" {
-  type    = list(string)
-  default = []
+  type    = string
 }
