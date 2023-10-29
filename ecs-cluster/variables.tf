@@ -59,3 +59,8 @@ variable "vpc_id" {
   type    = string
   default = null
 }
+
+variable "dns_namespace" {
+  type    = string
+  default = null
+}

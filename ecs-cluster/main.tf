@@ -43,7 +43,7 @@ resource "aws_ecs_cluster" "cluster" {
 
 resource "aws_service_discovery_private_dns_namespace" "default" {
   count       = var.create_service_discovery_private_dns_namespace ?  1 : 0
-  name        = "${terraform.workspace}.aquis.local"
+  name        = var.dns_namespace
   description = "Internal service discovery dns for ECS services"
   vpc         = var.vpc_id
 }
