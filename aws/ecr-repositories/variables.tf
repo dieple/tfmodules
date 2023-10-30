@@ -27,5 +27,5 @@ variable "scan_on_push" {
 }
 
 variable "registry_policy" {
-  type    = string
+  type = string
 }
