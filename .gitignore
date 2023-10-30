@@ -1,0 +1,20 @@
+# Editor directories and files
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# terraforn
+.terraform/
+*.tfstate.bkp
+*.tfstate.backup
+*.iml
+.log
+tfplan
+plan.out
+
+
