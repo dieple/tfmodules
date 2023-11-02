@@ -1,4 +1,3 @@
-
 resource "random_password" "password" {
   count            = var.enabled ? 1 : 0
   length           = var.length
